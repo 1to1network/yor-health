@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTEGRARTE</title>
+
+    <!-- BOOTSWATCH -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/pulse/bootstrap.min.css"
+    />
+
+    <style>
+      .contenedor {
+	max-width: 100%;
+	width: 400px;
+	margin: 0px auto;
+}
+
+.formulario input[type='text'] {
+	padding: 20px;
+	border: none;
+	background: #fff;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.formulario .btn {
+	width: 100%;
+	border: none;
+	background: rgb(0, 0, 0);
+	color: #fff;
+	cursor: pointer;
+	padding: 20px;
+	font-size: 20px;
+	border-radius: 5px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.formulario .btn:hover {
+	background: #3e14b2;
+}
+
+.contenedorQR {
+	display: flex;
+	justify-content: center;
+	padding: 0px 0;
+}
+
+
+
+    </style>
+
+    <style>
+   
+
+    </style>
+  </head>
+  
+  <!--#f1602e -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" >INTEGRARTE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" > Bienvenido/a  <span id=""></span></a>
+         
+        </li>
+        <li class="nav-item">
+        <!--  <a class="nav-link" href="admin.html">Reporte Semanal</a> -->
+        </li>
+     <!--
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+      -->
+      </ul>
+   
+      <form class="d-flex">
+         <!--  <input class="form-control me-sm-2" type="text" placeholder="Search">  -->
+      <a id="cerrar" style="color: white; font-weight: bold; text-decoration: none;" > Cerrar Sesión</a> 
+      </form>
+  
+    </div>
+  </div>
+</nav>
+  <body class="bg-dark">
+    <!-- ADD TASK -->
+    <!--
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="h4">Registrar</h1>
+
+              <form id="task-form">
+                <label for="title">Actividad:</label>
+                
+
+                <select class="form-select" id="task-title">
+                  <option>Gastos</option>
+                  <option>Ingresos</option>
+
+                 
+                </select>
+
+                <label for="title">Categoria:</label>
+                
+
+                <select class="form-select" id="task-category">
+                  <option>Educación</option>
+                  <option>Alimentos</option>
+
+                 
+                </select>
+
+                <label for="description">Cantidad:</label>
+                <input type="number"
+                  id="task-number"
+                  class="form-control mb-2"
+                  placeholder="Número de Vis/Ref/Inv - Nconcretado = $"
+                >
+              
+
+                <label for="description">Descripción:</label>
+                <textarea
+                  id="task-description"
+                  rows="3"
+                  class="form-control mb-3"
+                  placeholder="nombre de invitado, referencia para quien, cuanto $ generaste"
+                ></textarea>
+                
+                <button class="btn btn-primary" id="btn-task-form">Guardar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-6" id="tasks-container"></div>
+      
+      </div>
+    </div>
+    <div class="col-md-6" id="tasks-containerextra">
+     
+    </div>
+
+  -->
+<!--
+    <div class="container" >
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Categoria</th>
+            <th>Tipo</th>
+            <th>Cantidad</th>
+            <th>Descripción</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tasks-container">
+          
+        
+        </tbody>
+      </table>
+    </div>
+
+  -->
+
+    
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- Rotating card -->
+
+
+
+<div class="contenedor">
+  
+
+  <div id="contenedorQR" class="contenedorQR"></div>
+</div>
+
+
+
+
+
+
+<footer class="" >
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+           
+                <a target="_blank" href="https://www.facebook.com/webappsandchatbots"><p style="color: white;">Este Proyecto es patrocinado por Web Apps and Chatbots </p></a>
+                <!-- Rights-->
+               <a href="https://wa.me/525529107792" ><button class="btn btn-primary" id="">Contactanos</button></a>
+             
+                <p class="rights"><span>©  </span><span class="copyright-year">2022</span><span> </span><span><a href="https://cyapp.io/" target="_blank">cyapp.io</a></span><span>. </span><span>All Rights Reserved.</span></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              
+          
+            </div>
+            <div class="col-md-4 col-xl-3">
+              
+            </div>
+          </div>
+        </div>
+    
+      </footer>
+    <!-- CUSTOM CODE -->
+  
+
+    <script type="module" src="./index.js" type="module"></script>
+   
+   
+    
+  
+
+
+
+
+ 
+
+  </body>
+</html>

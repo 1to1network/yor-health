@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BNI Events</title>
+
+    <!-- BOOTSWATCH -->
+  
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/quartz/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <style>
+   
+
+    </style>
+  </head>
+  
+  <!--#f1602e -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" >BNI Events</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" > Bienvenido/a  <span id="nombre"></span></a>
+         
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reporte.html">Reporte Mensual</a> 
+        </li>
+     <!--
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+      -->
+      </ul>
+   
+      <form class="d-flex">
+         <!--  <input class="form-control me-sm-2" type="text" placeholder="Search">  -->
+      <a id="cerrar" style="color: white; font-weight: bold; text-decoration: none;" > Cerrar Sesión</a> 
+      </form>
+  
+    </div>
+  </div>
+</nav>
+  <body class="bg-dark">
+    <!-- ADD TASK -->
+    <!--
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="h4">Registrar</h1>
+
+              <form id="task-form">
+                <label for="title">Actividad:</label>
+                
+
+                <select class="form-select" id="task-title">
+                  <option>Gastos</option>
+                  <option>Ingresos</option>
+
+                 
+                </select>
+
+                <label for="title">Categoria:</label>
+                
+
+                <select class="form-select" id="task-category">
+                  <option>Educación</option>
+                  <option>Alimentos</option>
+
+                 
+                </select>
+
+                <label for="description">Cantidad:</label>
+                <input type="number"
+                  id="task-number"
+                  class="form-control mb-2"
+                  placeholder="Número de Vis/Ref/Inv - Nconcretado = $"
+                >
+              
+
+                <label for="description">Descripción:</label>
+                <textarea
+                  id="task-description"
+                  rows="3"
+                  class="form-control mb-3"
+                  placeholder="nombre de invitado, referencia para quien, cuanto $ generaste"
+                ></textarea>
+                
+                <button class="btn btn-primary" id="btn-task-form">Guardar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-6" id="tasks-container"></div>
+      
+      </div>
+    </div>
+    <div class="col-md-6" id="tasks-containerextra">
+     
+    </div>
+
+  -->
+<!--
+    <div class="container" >
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Categoria</th>
+            <th>Tipo</th>
+            <th>Cantidad</th>
+            <th>Descripción</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tasks-container">
+          
+        
+        </tbody>
+      </table>
+    </div>
+
+  -->
+
+    
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- Rotating card -->
+
+
+
+<div class="container" >
+  <br>
+ 
+    <button class="btn btn-success" id="vertodo" value="">Mostrar</button>
+  <div class="input-group mb-3">
+    
+    <span class="input-group-text">Buscador</span>
+    <input id="filtrar" type="text" class="form-control" placeholder="Buscar">
+    
+  </div>
+  <div class="table-responsive">
+    <table class="table table-hover table-striped" id="testTable">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Hora</th>
+          <th>Nombre</th>
+          <th>Tipo</th>
+       
+          
+        </tr>
+      </thead>
+    
+      <tbody id="tasks-container" class="buscar" >
+        
+      
+      </tbody>
+    </table>
+  </div>
+  <button id="btnExport" onclick="fnExcelReport();" class="btn btn-primary">Exportar a
+    Excel</button>
+  </div>
+
+
+
+
+
+<footer class="" >
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+           
+                <a target="_blank" href="https://www.facebook.com/webappsandchatbots"><p style="color: white;">Este Proyecto es patrocinado por Web Apps and Chatbots </p></a>
+                <!-- Rights-->
+               <a href="https://wa.me/525529107792" ><button class="btn btn-primary" id="">Contactanos</button></a>
+             
+                <p class="rights"><span>©  </span><span class="copyright-year">2022</span><span> </span><span><a href="https://cyapp.io/" target="_blank">cyapp.io</a></span><span>. </span><span>All Rights Reserved.</span></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              
+          
+            </div>
+            <div class="col-md-4 col-xl-3">
+              
+            </div>
+          </div>
+        </div>
+    
+      </footer>
+    <!-- CUSTOM CODE -->
+  
+
+    <script type="module" src="./getevents2.js" type="module"></script>
+   
+    <script>
+      function fnExcelReport()
+{
+    var tab_text="<table border='2px'><tr bgcolor='#87AFC6'>";
+    var textRange; var j=0;
+    tab = document.getElementById('testTable'); // id of table
+
+    for(j = 0 ; j < tab.rows.length ; j++) 
+    {     
+        tab_text=tab_text+tab.rows[j].innerHTML+"</tr>";
+        //tab_text=tab_text+"</tr>";
+    }
+
+    tab_text=tab_text+"</table>";
+    tab_text= tab_text.replace(/<A[^>]*>|<\/A>/g, "");//remove if u want links in your table
+    tab_text= tab_text.replace(/<img[^>]*>/gi,""); // remove if u want images in your table
+    tab_text= tab_text.replace(/<input[^>]*>|<\/input>/gi, ""); // reomves input params
+
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE "); 
+
+    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))      // If Internet Explorer
+    {
+        txtArea1.document.open("txt/html","replace");
+        txtArea1.document.write(tab_text);
+        txtArea1.document.close();
+        txtArea1.focus(); 
+        sa=txtArea1.document.execCommand("SaveAs",true,"Say Thanks to Sumit.xls");
+    }  
+    else                 //other browser not tested on IE 11
+        sa = window.open('data:application/vnd.ms-excel,' + encodeURIComponent(tab_text));  
+
+    return (sa);
+}
+
+   </script>
+   <script>
+    $(document).ready(function () {
+
+(function ($) {
+
+    $('#filtrar').keyup(function () {
+
+        var rex = new RegExp($(this).val(), 'i');
+      
+        $('.buscar tr').hide();
+        $('.buscar tr').filter(function () {
+            return rex.test($(this).text());
+              
+        }).show();
+
+    });
+
+}(jQuery));
+ 
+
+});
+
+   </script>
+    
+    
+  
+
+
+
+
+ 
+
+  </body>
+</html>

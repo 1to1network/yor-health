@@ -1,0 +1,1775 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minumum-scale=1.0">
+    <title>GNP Seguros | Narda Sánchez</title>
+    <link rel="shortcut icon" href="u/gnpseguros/icono.png">
+
+    <!--------BIBLIOTECA DE BOOTSTRAP--------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--------INTEGRACI�N DE JQUERY----------->
+    <link type="text/css" rel="stylesheet" href="assets/css/templetes/_tarpi.css">
+
+    <link type="text/css" rel="stylesheet" href="assets/css/dark-hive/jquery-ui-1.9.2.custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+    <!--------TIPO DE LETRA--------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav&amp;display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&amp;display=swap" rel="stylesheet">
+    <!--------GENERALES--------->
+    <script type="text/javascript" src="assets/js/templetes/tarpi.operator.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/css/tigutierrez.css">
+</head>
+
+
+<body onpageshow="if(event.persisted)sinVueltaAtras();" onload="nobackbutton(); " onunload=""
+    ondragstart="return false">
+
+    <script src="//code.tidio.co/4i3mpak8jbb0cva54crmtdr5p1l55afn.js" async=""></script>
+
+
+    <script>alertaWhatsApp();//muestraPopContacto();</script>
+
+    <style>
+        /*****************BG GENERAL*******************/
+        * {
+            font-family: 'Yantramanav', sans-serif;
+        }
+
+
+
+        html,
+        body {
+            background-image: url(https://e-cards.com.mx/u/gnpseguros/bgG337a69af.jpg);
+
+            background-size: 100% 100% !important;
+            background-repeat: no-repeat;
+        }
+
+
+        .ventanaO {
+            background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(https://e-cards.com.mx/u/gnpseguros/bgA3a8ed3f3.jpg) !important;
+            background-size: cover !important;
+        }
+
+        .tarjeta,
+        #AccionesCompartir,
+        #EspacioCita,
+        .librero {
+            background-image: url(https://e-cards.com.mx/u/gnpseguros/bgA3a8ed3f3.jpg) !important;
+            background-size: cover !important;
+            background-repeat: no-repeat;
+        }
+
+        .opacidadTarjeta {
+            background: rgba(255, 255, 255, 0);
+        }
+
+        .gradiente {
+            text-align: center;
+            height: 36px;
+            background: -moz-linear-gradient(top, #ffffff 90%, #fb6c06) !important;
+            background: -webkit-linear-gradient(top, #ffffff 90%, #fb6c06) !important;
+            background: -o-linear-gradient(top, #ffffff 90%, #fb6c06) !important;
+            background: -linear-gradient(#ffffff 90%, #fb6c06) !important;
+        }
+
+        .banner {
+            animation: banner 35s infinite linear !important;
+        }
+
+        .nomAgente,
+        .puestoAgente,
+        .envianosTusDatos,
+        .esNecesario,
+        .comparteEstaEcard,
+        .contadorVisitas,
+        .nombreDock,
+        .puestoDock,
+        .form-group label,
+        .form-group span,
+        .wrapDock .parrafoEcard {
+            color: #000000 !important;
+        }
+
+        visitas {
+            color: #fb6c06;
+        }
+
+        .menuDock,
+        .botonTarpi2_0 {
+            background: #fb6c06;
+            transition: all 0.5s;
+        }
+
+        .icoDock:hover {
+            box-shadow: 0 0 50px #fb6c06;
+        }
+
+        .dockItem:hover {
+            box-shadow: 3px 3px 15px #00337f !important;
+            transition: all 0.5s;
+        }
+
+        .botonTarpi2_0:hover {
+            box-shadow: 0 0 10px #00337f;
+            transition: all 0.5s;
+        }
+
+        .botonTarpi2_0_2,
+        .botonTarpi2_0 {
+            background: #00337f !important;
+            color: #ffffff !important;
+        }
+
+        .iconoRedTarpi {
+            color: #00337f;
+        }
+
+        .iconoRedTarpi:hover {
+            text-shadow: 0 0 30px #ffffff;
+            transition: all 1s;
+        }
+
+        .icoPrincTarpi {
+            border: 3px solid #fb6c06;
+        }
+
+        .icoPrin {
+            color: #fb6c06;
+        }
+
+        .botonLargo,
+        .quieroPromo {
+            background: #00337f;
+            color: #ffffff;
+            transition: all 0.5s;
+        }
+
+        .botonLargo:hover,
+        .quieroPromo:hover {
+            background: #00337f !important;
+            color: #ffffff !important;
+            opacity: 0.9;
+            box-shadow: 3px 3px 9px;
+            transition: all 0.5s;
+        }
+
+        .inputEcard {
+            border-bottom: 1px solid !important;
+            transition: all 0.5s;
+        }
+
+        .inputEcard:focus {
+            border-bottom: 2px solid #fb6c06 !important;
+            transition: all 0.5s;
+        }
+
+        .icoCita {
+            /*Icono dentro del bot�n de citas*/
+            color: #ffffff !important;
+            font-size: 15px;
+        }
+
+        .headerVentana,
+        .headerCitas {
+            background: #00337f;
+            color: #ffffff !important;
+            border-bottom: 4px solid #ffffff !important;
+        }
+
+        .closeVentana,
+        .cerrarCita {
+            color: #ffffff !important;
+        }
+
+        .icoDockDown,
+        .txtIcoDock,
+        .botonTarpi2_0 {
+            color: #000000;
+        }
+
+        .headerCitas {
+            background: #fb6c06;
+            color: #fb6c06;
+            border-bottom: 5px solid #00337f;
+        }
+
+        .cerrarCita {
+            color: #fb6c06 !important;
+        }
+
+        .footerCard_v2 {
+            background: #ffffff;
+        }
+
+        .headerDock {
+            color: #ffffff !important;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+
+
+        .inputEcard,
+        .inputEcardPop {
+
+            border-bottom: 1px solid #00337f !important;
+        }
+
+        .inputEcard:focus,
+        .inputEcardPop:focus {
+            box-shadow: none !important;
+            border-bottom: 2px solid #fb6c06 !important;
+            transition: all 0.5s;
+        }
+
+        /***************OPCIONES DEL DOCK****************/
+
+        .bg_opDock {
+            background: #00337f !important;
+            color: #ffffff !important;
+            box-shadow: 0 0 10px 5px rgba(0, 51, 127, 0.4);
+            transition: 0.5s all ease;
+        }
+
+        .bg_opDock:hover {
+            box-shadow: 0 0 20px 5px rgba(0, 51, 127, 0.6);
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+            transition: 0.5s all ease;
+        }
+
+
+
+        .bg_opDock label,
+        .bg_opDock i {
+            color: #ffffff !important;
+        }
+
+
+        /***************GUARDAR TARJETA****************/
+        .titleSO,
+        .parrafoSO {
+            color: #000000 !important;
+        }
+
+        /***************FORMULARIOS****************/
+        .titleFormulario,
+        .descForm,
+        .tarpiForms input {
+            color: #000000 !important;
+        }
+
+        /***************ANIMACI�N DE INICIO****************/
+
+        #animacion {
+            border-bottom: 10px ridge #fb6c06;
+            animation: animav2 5s 1 linear;
+        }
+
+        #cortina1 {
+            border-right: 10px ridge #fb6c06;
+            animation: cortina1 4s 1 linear;
+        }
+
+        #cortina2 {
+            border-left: 10px ridge #fb6c06;
+            animation: cortina2 4s 1 linear;
+        }
+
+        .fotoPerfil1 {
+            animation: fotoPerfil1v2 5s 1 linear;
+            border: 3px solid #00337f;
+        }
+
+        .fotoDock {
+            border: 3px solid #00337f !important;
+        }
+
+        .logoTarpi {
+            animation: logoTarpiv2 5s 1 linear;
+            height: 28.8px !important;
+            width: auto;
+            margin-top: 3.6px;
+        }
+
+        .menuDock {
+            animation: menuDock 6s 1 linear;
+        }
+
+        .gradiente {
+            animation: gradiente 6s 1 linear;
+        }
+
+        .opSecundarias {
+            animation: opSecundarias 6s 1 linear;
+        }
+
+        #slogan {
+            font-size: 20px !important;
+        }
+
+        /***************BOTONES SECUNDARIOS****************/
+
+        .opSecundarias {
+            background: rgba(0, 51, 127, 0.86);
+        }
+
+        .botonSecundario,
+        .icoSec {
+            color: #ffffff !important;
+        }
+
+        .botonSeguidores,
+        .contSeguidores,
+        .icoSeguidores {
+            color: #000000;
+        }
+
+        .opSeguidores {
+            top: 270px;
+        }
+
+        @media (min-width: 415px) {
+
+            /*Para mi iPhone*/
+            .opSeguidores {
+                top: 200px;
+            }
+        }
+
+        @media (max-height: 705px) {
+
+            /*Para escritorio*/
+            .opSeguidores {
+                top: 250px;
+            }
+        }
+
+        @keyframes banner {
+            0% {
+                background-image: url("https://e-cards.com.mx/u/gnpseguros/i17ec7f227.jpg");
+                opacity: 1;
+            }
+
+            19% {
+                background-image: url("https://e-cards.com.mx/u/gnpseguros/i17ec7f227.jpg");
+                opacity: 1;
+            }
+
+            20% {
+                background-image: url("https://e-cards.com.mx/u/gnpseguros/i2037496e4.jpg");
+                opacity: 1;
+            }
+
+            39% {
+                background-image: url("https://e-cards.com.mx/u/gnpseguros/i2037496e4.jpg");
+                opacity: 1;
+            }
+
+            40% {
+                background-image: url("https://e-cards.com.mx/u/gnpseguros/i3b7de4f30.jpg");
+                opacity: 1;
+            }
+
+            59% {
+                background-image: url("https://e-cards.com.mx/u/gnpseguros/i3b7de4f30.jpg");
+                opacity: 1;
+            }
+
+            60% {
+                background-image: url("https://e-cards.com.mx/u/gnpseguros/i4b7de4f30.jpg");
+                opacity: 1;
+            }
+
+            79% {
+                background-image: url("https://e-cards.com.mx/u/gnpseguros/i4b7de4f30.jpg");
+                opacity: 1;
+            }
+
+            80% {
+                background-image: url("https://e-cards.com.mx/u/gnpseguros/i5037496e4.jpg");
+                opacity: 1;
+            }
+
+            99% {
+                background-image: url("https://e-cards.com.mx/u/gnpseguros/i5037496e4.jpg");
+                opacity: 1;
+            }
+
+            100% {
+                background-image: url("https://e-cards.com.mx/u/gnpseguros/i17ec7f227.jpg");
+                opacity: 1;
+            }
+
+            119% {
+                background-image: url("https://e-cards.com.mx/u/gnpseguros/i17ec7f227.jpg");
+                opacity: 1;
+            }
+        }
+
+        /***************ALTURA DE TARJETA****************/
+
+
+
+
+
+
+        /*body, .tarjeta{
+        height: px!important;
+    }
+    
+    @media (min-width: 415px){
+        body{
+            height: 100VH;
+        }
+        
+        .tarjeta{
+            height: 580px;
+        }
+    }*/
+
+
+
+
+
+
+
+        /***************ESTILOS ESPECIALES PARA VISTA EN ESCRITORIO****************/
+
+        @media (min-width: 376px) {}
+    </style>
+
+
+
+
+    <style>
+        /*.tarjeta{
+        height: 86vh;
+    }*/
+
+
+        @media (max-height: 705px) {}
+
+
+        @media (min-width: 415px) {}
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="particles-js"><canvas class="particles-js-canvas-el" width="1021" height="706"
+            style="width: 100%; height: 100%;"></canvas></div>
+    <input hidden="" type="checkbox" id="share-Card" name="share-Card">
+    <input hidden="" type="checkbox" id="showDate" name="showDate">
+    <input hidden="" type="checkbox" id="cat-Card" name="cat-Card">
+    <input hidden="" type="checkbox" id="contactoCard" name="contactoCard">
+    <input hidden="" type="checkbox" id="dockCard" name="dockCard">
+    <div class="tarjeta" id="contenedorTarjeta">
+        <div class="opacidadTarjeta">
+            <div id="divAcciones"></div>
+
+            <div class="banner" style="border: none!important;"></div>
+            <img src="u/gnpseguros/i17ec7f227.jpg" class="fail" style="background: transparent;">
+
+
+
+            <div class="gradiente">
+                <img src="u/gnpseguros/logo.png" class="logoTarpi">
+            </div>
+
+            <img src="assets/usuarios/fotos/5506371f.jpg" class="fotoPerfil1">
+
+            <div class="opSecundarias">
+                <div class="botonSecundario wrapParrafos" onclick="document.forms['addContact'].submit();">
+                    <div class="wrapParrafos">
+                        <i class="bi bi-person-plus-fill icoDockDown icoSec"></i>
+                    </div>
+                    Agrégame
+                </div>
+                <div class="botonSecundario wrapParrafos" onclick="showPop();">
+                    <div class="wrapParrafos">
+                        <i class="bi bi-pencil-square icoDockDown icoSec"></i>
+                    </div>
+                    Regístrate
+                </div>
+                <label for="share-Card" class="botonSecundario wrapParrafos">
+                    <div class="wrapParrafos">
+                        <i class="bi bi-share-fill icoDockDown icoSec"></i>
+                    </div>
+                    Compartir
+                </label>
+            </div>
+
+            <div class="opSeguidores">
+                <div class="botonSeguidores wrapParrafos">
+                    <div id="htmlnoSegs">
+                        <div class="wrapParrafos">
+                            <i class="icoDockDown contSeguidores">23</i>
+                        </div>
+                        Seguidores
+                    </div>
+                </div>
+                <div class="botonSeguidores wrapParrafos">
+                    <div class="wrapParrafos">
+                        <i class="icoDockDown contSeguidores">5.9K</i>
+                    </div>
+                    Visitas
+                </div>
+
+                <div id="htmlSeg">
+                    <div class="botonSeguidores wrapParrafos" style="cursor: pointer;" onclick="showPopNF();">
+                        <div class="wrapParrafos">
+                            <i class="bi bi-suit-heart icoDockDown icoSeguidores"></i>
+                        </div>
+                        Hazte fan
+                    </div>
+                </div>
+            </div>
+
+            <div class="placaNombre" style="z-index:6;">
+                <div class="nomAgente">Lic. Narda <apellidot>Sánchez</apellidot>
+                </div>
+                <div class="puestoAgente">Agente de Seguros</div>
+                <div class="wrapParrafos">
+                    <a target="_blank" href="https://www.facebook.com/TIGutierrezOficial">
+                        <i class="bi bi-facebook iconoRedTarpi" style=""></i>
+                    </a>&emsp;
+                    <a target="_blank" href="https://twitter.com/Trehobot">
+                        <i class="bi bi-twitter iconoRedTarpi" style=""></i>
+                    </a>&emsp;
+                    <a target="_blank" href="https://www.instagram.com/tigutierrez/">
+                        <i class="bi bi-instagram iconoRedTarpi" style=""></i>
+                    </a>&emsp;
+                    <a target="_blank" href="https://www.e-cards.com.mx/">
+                        <i class="bi bi-globe iconoRedTarpi" style=""></i>
+                    </a>&emsp;
+                </div>
+
+                <div class="wrapParrafos" style="width: 90%; margin-left: 5%;">
+                    <a href="tel: 5524790088" onclick="guardaInteraccion(215, 2);">
+                        <div class="icoPrincTarpi" title="Llamar a Oficina">
+                            <i class="bi bi-telephone-forward icoPrin"></i>
+                        </div>
+                    </a>&emsp;&emsp;<a href="tel: 5526677050" onclick="guardaInteraccion(215, 2);">
+                        <div class="icoPrincTarpi" title="Llamar al Móvil">
+                            <i class="bi bi-telephone-forward-fill icoPrin"></i>
+                        </div>
+                    </a>&emsp;&emsp;<a target="_blank"
+                        href="https://api.whatsapp.com/send?phone=525526677050&amp;text=Hola, visite tu Tarjeta Inteligente y *deseo adquirir una Tarjeta* como esta. Me dedico a:"
+                        onclick="guardaInteraccion(215, 1)" ;="">
+                        <div class="icoPrincTarpi" title="Envíar WhatsApp" style="position: relative">
+                            <span class="notifChatTarpi" id="notifChatTarpi" style="display: inline-block;">1</span>
+                            <i class="bi bi-whatsapp icoPrin"></i>
+                        </div>
+                    </a>&emsp;&emsp;<a href="mailto: aaron.tesla@e-cards.com.mx" onclick="guardaInteraccion(215, 3);">
+                        <div class="icoPrincTarpi" title="Envíar E-mail">
+                            <i class="bi bi-envelope icoPrin"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="botonLargo" onclick="infoDock(215, 'catalogo');" for="">
+                    Checa mis productos
+                </div>
+            </div>
+
+            <div class="menuDock">
+                <div class="icoDock" onclick="infoDock(215, 'general');">
+                    <img src="u/gnpseguros/icono.png" class="iconoTarpi">
+                </div>
+
+                <div class="dockItem" onclick="infoDock(215, 'promos');" for="">
+                    <div class="wrapParrafos">
+                        <i class="bi bi-tag-fill icoDockDown"></i>
+                    </div>
+                    <div class="wrapParrafos">
+                        <label class="txtIcoDock">Promos</label>
+                    </div>
+                </div>
+                <div class="dockItem" onclick="infoDock(215, 'links');" for="">
+                    <div class="wrapParrafos">
+                        <i class="bi bi-menu-button-wide icoDockDown"></i>
+                    </div>
+                    <div class="wrapParrafos">
+                        <label class="txtIcoDock">Links</label>
+                    </div>
+                </div>
+                <div class="dockItem">&emsp;</div>
+                <div class="dockItem" onclick="infoDock(215, 'galeria');" for="">
+                    <div class="wrapParrafos">
+                        <i class="bi bi-card-image icoDockDown"></i>
+                    </div>
+                    <div class="wrapParrafos">
+                        <label class="txtIcoDock">Galería</label>
+                    </div>
+                </div>
+                <div class="dockItem" onclick="infoDock(215, 'forms');" for="">
+                    <div class="wrapParrafos">
+                        <i class="bi bi-layout-text-sidebar-reverse icoDockDown"></i>
+                    </div>
+                    <div class="wrapParrafos">
+                        <label class="txtIcoDock">Cotizador</label>
+                    </div>
+                </div>
+            </div>
+
+            <!--****AGENDAR CITA*****-->
+            <div class="EspacioCita" id="EspacioCita" style="z-index:999999!important;">
+                <div class="opacidadTarjeta">
+                    <div class="headerCitas" style="background: #00337f!important;">
+                        Agenda una cita
+                        <label class="close cerrarDock " id="RegresaDock" for="showDate" style=" ">
+                            <label class="closeVentana cerrarCita" for="showDate"
+                                style="color: #ffffff!important;">×</label>
+                        </label>
+                    </div>
+
+
+                    <script>
+                        $(function () {
+                            $("#agendar").click(function () {
+                                if ($("#horario").val() == '') {
+                                    document.getElementById("horario").style.border = '2px solid #ff0000';
+                                    document.getElementById("horario").style.background = '#ffd8e5';
+                                    document.getElementById("Info").style.color = '#ff0000';
+                                    $('#horario').focus();
+                                    $("#Info").html("Por favor, Ingrese el horario de su preferencia para su cita y en breve nos comunicamos");
+                                    return false;
+                                }
+                            });
+                        });
+                    </script>
+
+                    <style>
+                        /*GAMA ALTA*/
+                        #input100,
+                        #input50_1,
+                        #input50_2,
+                        .horario {
+                            width: 100%;
+                            margin-top: 20px;
+                            font-family: 'Yantramanav', sans-serif;
+                            font-size: 15px;
+                        }
+
+                        .esNecesario,
+                        .envianosTusDatos {
+                            font-size: 18px;
+                        }
+
+                        .espacioDate {
+                            height: 30px;
+                        }
+
+                        @media (max-height: 705px) {
+
+                            /*GAMA BAJA*/
+                            .espacioDate {
+                                height: 1px;
+                            }
+
+                            .esNecesario,
+                            .envianosTusDatos {
+                                font-size: 15px;
+                            }
+                        }
+
+                        @media (min-width: 415px) {
+
+                            /*ESCRITORIO*/
+                            #input100,
+                            #input50_1,
+                            #input50_2,
+                            .horario {
+                                width: 100%;
+                                margin-top: 15px;
+                                font-family: 'Yantramanav', sans-serif;
+                                font-size: 13px;
+                            }
+
+                            .esNecesario,
+                            .envianosTusDatos {
+                                font-size: 13px;
+                            }
+
+                            .espacioDate {
+                                height: 30px;
+                            }
+
+                        }
+                    </style>
+
+                    <div class="spaceForm" style="padding: 15px;">
+
+                        <div class="envianosTusDatos" id="Info" style="">
+                            Por favor, envíanos tus datos y en breve nos comunicamos. </div>
+                        <form method="post" action="?ctrl=e&amp;action=enviarCita">
+                            <input type="hidden" name="idEcard" value="215">
+                            <input type="hidden" name="idEjecutivo" value="215">
+                            <input type="hidden" name="rutaTarjeta" value="gnpseguros">
+                            <input type="hidden" name="duracion" value="2">
+                            <input type="text" name="nombre" id="input100" class="form-control" required="required"
+                                placeholder="NOMBRE COMPLETO*">
+                            <input type="email" name="email" id="input50_1" class="form-control" required="required"
+                                placeholder="E-MAIL*" style="">
+                            <input type="number" name="tel" id="input50_2" class="form-control" required="required"
+                                placeholder="TELÉFONO*" style="">
+
+                            <input type="texto" name="motivo" id="input50_1" class="form-control"
+                                placeholder="MOTIVO (Opcional)">
+                            <select name="horario" id="horario" class="form-control horario"
+                                style="height: 35px!important; font-size: 13px!important;">
+                                <option value="">--Seleccione un horario disponible--</option>
+                                <option value="2022-10-10 09:00:00" class="opcionCita" style="background: #fff;">El
+                                    Lunes 10 de Octubre de 2022 a las 09:00 hrs.</option>
+                                <option value="2022-10-10 07:00:00" class="opcionCita" style="background: #fff;">El
+                                    Lunes 10 de Octubre de 2022 a las 07:00 hrs.</option>
+                                <option value="2022-10-10 05:00:00" class="opcionCita" style="background: #fff;">El
+                                    Lunes 10 de Octubre de 2022 a las 05:00 hrs.</option>
+                                <option value="2022-10-11 09:00:00" class="opcionCita"
+                                    style="background: #ccc; color:#000; font-weight: bold;;">El Martes 11 de Octubre de
+                                    2022 a las 09:00 hrs.</option>
+                                <option value="2022-10-11 07:00:00" class="opcionCita"
+                                    style="background: #ccc; color:#000; font-weight: bold;;">El Martes 11 de Octubre de
+                                    2022 a las 07:00 hrs.</option>
+                                <option value="2022-10-11 05:00:00" class="opcionCita"
+                                    style="background: #ccc; color:#000; font-weight: bold;;">El Martes 11 de Octubre de
+                                    2022 a las 05:00 hrs.</option>
+                                <option value="2022-10-12 09:00:00" class="opcionCita" style="background: #fff;">El
+                                    Miercoles 12 de Octubre de 2022 a las 09:00 hrs.</option>
+                                <option value="2022-10-12 07:00:00" class="opcionCita" style="background: #fff;">El
+                                    Miercoles 12 de Octubre de 2022 a las 07:00 hrs.</option>
+                                <option value="2022-10-12 05:00:00" class="opcionCita" style="background: #fff;">El
+                                    Miercoles 12 de Octubre de 2022 a las 05:00 hrs.</option>
+                                <option value="2022-10-13 09:00:00" class="opcionCita"
+                                    style="background: #ccc; color:#000; font-weight: bold;;">El Jueves 13 de Octubre de
+                                    2022 a las 09:00 hrs.</option>
+                                <option value="2022-10-13 07:00:00" class="opcionCita"
+                                    style="background: #ccc; color:#000; font-weight: bold;;">El Jueves 13 de Octubre de
+                                    2022 a las 07:00 hrs.</option>
+                                <option value="2022-10-13 05:00:00" class="opcionCita"
+                                    style="background: #ccc; color:#000; font-weight: bold;;">El Jueves 13 de Octubre de
+                                    2022 a las 05:00 hrs.</option>
+                                <option value="2022-10-14 09:00:00" class="opcionCita" style="background: #fff;">El
+                                    Viernes 14 de Octubre de 2022 a las 09:00 hrs.</option>
+                                <option value="2022-10-14 07:00:00" class="opcionCita" style="background: #fff;">El
+                                    Viernes 14 de Octubre de 2022 a las 07:00 hrs.</option>
+                                <option value="2022-10-14 05:00:00" class="opcionCita" style="background: #fff;">El
+                                    Viernes 14 de Octubre de 2022 a las 05:00 hrs.</option>
+                            </select>
+
+                            <p class="espacioDate">&emsp;</p>
+
+                            <label class="esNecesario" style="">
+                                Es necesario que tus datos de contacto estén correctos para poder concretar la cita. De
+                                lo contrario, será cancelada por Narda </label>
+
+                            <p class="espacioDate">&emsp;</p>
+
+                            <div class="wrapParrafos">
+                                <button type="submit" class="btn btn-default botonTarpi2_0_2" name="agendar"
+                                    id="agendar">
+                                    <i class="bi bi-calendar-date-fill icoDockDown icoCita"></i>
+                                    &nbsp;Agendar Cita </button>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="footerCard_v2"></div> <img class="logoCita" src="u/gnpseguros/logo.png">
+                </div>
+            </div>
+
+            <!--****COMPARTIR*****-->
+            <div id="AccionesCompartir" class="AccionesCompartir" style="z-index:101;">
+                <div class="opacidadTarjeta">
+                    <div class="headerCitas" style="background: #00337f!important;">
+                        Comparte
+                        <label class="close cerrarDock " id="RegresaDock" for="share-Card">
+                            <label class="closeVentana cerrarCita" for="share-Card"
+                                style="color: #ffffff!important;">×</label>
+                        </label>
+                    </div>
+                    <script>
+                        function getlink(ruta) {
+                            var aux = document.createElement("input");
+                            aux.setAttribute("value", "https://www.e-cards.com.mx/u/" + ruta);
+                            document.body.appendChild(aux);
+                            aux.select();
+                            document.execCommand("copy");
+                            document.body.removeChild(aux);
+                            alert("Enlace copiado en el portapapeles");
+                        }
+
+                        function showQRBigger() {
+                            $("#spanQR").slideDown("slow");
+                            $("#GrandQR").slideDown("slow");
+                            $("#cerrarCompartir").fadeOut(50);
+                            $("#cerrarQR").fadeIn(50);
+                        }
+
+                        function cerrarQR() {
+                            $("#spanQR").slideUp("slow");
+                            $("#GrandQR").slideUp("slow");
+                            $("#cerrarCompartir").fadeIn(50);
+                            $("#cerrarQR").fadeOut(50);
+                        }
+
+                        function showAddWhats() {
+                            $("#opcionesCompartir").hide("Blind");
+                            $("#agregarNumeroWA").show("Blind");
+                            $("#agregarCorreos").hide("Blind");
+                        }
+
+                        function cerrarAddWhats() {
+                            $("#opcionesCompartir").show("Blind");
+                            $("#agregarNumeroWA").hide("Blind");
+                            $('#numeroWA').val('');
+                            $("#agregarCorreos").hide("Blind");
+                        }
+
+                        function enviarPorCorreo() {
+                            $("#opcionesCompartir").hide("Blind");
+                            $("#agregarCorreos").show("Blind");
+                            $("#agregarNumeroWA").hide("Blind");
+                        }
+                    </script>
+
+                    <style>
+                        #AccionesCompartir {
+                            position: absolute;
+                            z-index: 20;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 90vh;
+                            background-size: 100% 100%;
+                            transform: translatex(-100%);
+                        }
+
+                        .cuerpoContacto {
+                            position: absolute;
+                            width: 100%;
+                            top: 65px;
+                            text-align: center;
+                            font-size: 15px;
+                        }
+
+                        /*#opcionesCompartir{
+        margin-top: 40px;
+    }*/
+
+                        .iconoCompartir {
+                            width: 80px;
+                            height: 80px;
+                            margin-left: 10px;
+                            background: #fff;
+                            border-radius: 15px;
+                            box-shadow: 3px 3px 5px #000;
+                        }
+
+                        #spanQR {
+                            position: absolute;
+                            z-index: 20;
+                            border-radius: 0;
+                            width: 100%;
+                            height: 550px;
+                            top: 5px;
+                            left: 0px;
+                            background: #fff;
+                            background-size: 100% 100%;
+                            display: none;
+                        }
+
+                        #GrandQR {
+                            position: absolute;
+                            z-index: 23;
+                            width: 57.69%;
+                            height: auto;
+                            left: 21.15%;
+                            top: 180px;
+                            display: none;
+                            border-radius: 15px;
+                        }
+
+                        .spaceForAddWA {
+                            position: absolute;
+                            z-index: 21;
+                            width: 90%;
+                            left: 5%;
+                            top: 110px;
+                        }
+
+                        .icono {
+                            width: 25px;
+                            height: 25px;
+                        }
+
+                        #sombraShare {
+                            bottom: 80px;
+                        }
+
+                        /*******TARPI 2.0********/
+                        .icoShare {
+                            position: relative;
+                            z-index: 5;
+                            text-align: center;
+                            padding-top: 9px;
+                            padding-left: 2px;
+                            margin-left: 8%;
+                            margin-right: 8%;
+                            width: 60px;
+                            height: 60px;
+                            background: #fff;
+                            border-radius: 50%;
+                            box-shadow: 0 0 10px #000;
+                            border: white 6px outset;
+                            cursor: pointer;
+                            transition: all 1s;
+                            float: left;
+                        }
+
+                        .icoShare:hover {
+                            border: white 6px inset;
+                            transition: all 1s;
+                        }
+
+                        .icoShare span {
+                            position: absolute;
+                            left: -40%;
+                            bottom: -25px;
+                            width: 180%;
+                            background: rgba(255, 255, 255, 0.8);
+                            color: #000;
+                            font-size: 11px;
+                            padding: 1px;
+                            padding-top: 2px;
+                            text-align: center;
+                            border-radius: 5px;
+                            font-weight: bold !important;
+                        }
+
+                        .espacioEntreShares {
+                            margin-top: 10vh;
+                        }
+
+                        @media (max-height: 705px) {
+                            .espacioEntreShares {
+                                margin-top: 8vh;
+                            }
+                        }
+
+
+
+                        @media (min-width: 415px) {
+                            #AccionesCompartir {
+                                height: 580px;
+                            }
+
+                            .espacioEntreShares {
+                                margin-top: 8vh;
+                            }
+                        }
+                    </style>
+
+                    <div id="spanQR"></div>
+                    <a href="u/gnpseguros/gnpseguros.png" download="gnpseguros">
+                        <img id="GrandQR" src="u/gnpseguros/gnpseguros.png">
+                    </a>
+
+                    <div id="cerrarQR" style="display: none;">
+                        <label class="boton" title="Cerrar" id="cerrarCat" onclick="cerrarQR();">
+                            <img src="assets/images/templetes/botones/cerrar.png" class="icoAndSombra">
+                        </label>
+                    </div>
+
+                    <div class="cuerpoContacto">
+                        <div class="comparteEstaEcard">
+                            ¡Comparte esta Tarjeta Inteligente con tus amigos! </div>
+                        <!--*****OPCIONES PARA COMPARTIR E-CARD*****-->
+                        <div id="opcionesCompartir">
+                            <div class="wrapParrafos espacioEntreShares">
+                                <div class="icoShare" title="Comparte por WhatsApp a un número no registrado"
+                                    style="background: #30be2d;" onclick="showAddWhats()">
+                                    <i class="bi bi-person-plus-fill icoDockDown" style="color: #fff;"></i>
+                                    <span>WhatsApp</span>
+                                </div>
+
+                                <a class="icoShare" title="Comparte por WhatsApp" style="background: #30be2d;"
+                                    target="_blank"
+                                    href="https://api.whatsapp.com/send?text=https://e-cards.com.mx/u/gnpseguros">
+                                    <i class="bi bi-whatsapp icoDockDown" style="color: #fff;"></i>
+                                    <span>WhatsApp</span>
+                                </a>
+                            </div>
+
+                            <div class="wrapParrafos espacioEntreShares">
+                                <a class="icoShare" title="Comparte por Facebook" style="background: #3c5996;"
+                                    target="_blank"
+                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fe-cards.com.mx%2Fu%2Fgnpseguros">
+                                    <i class="bi bi-facebook icoDockDown" style="color: #fff;"></i>
+                                    <span>Facebook</span>
+                                </a>
+
+                                <a class="icoShare" style="background: #53c1dc;" target="_blank" title="Hacer un Tuit"
+                                    href="http://twitter.com/home?status=Hola,%20te%20invito%20a%20conocer%20mi%20e-card:%20https://e-cards.com.mx/u/gnpseguros">
+                                    <i class="bi bi-twitter icoDockDown" style="color: #fff;"></i>
+                                    <span>Twitter</span>
+                                </a>
+
+                                <div class="icoShare" title="Enviar por e-mail" style="background: #e7b71c;"
+                                    onclick="enviarPorCorreo();">
+                                    <i class="bi bi-envelope-fill icoDockDown" style="color: #fff;"></i>
+                                    <span>E-mail</span>
+                                </div>
+                            </div>
+
+                            <div class="wrapParrafos espacioEntreShares">
+                                <div class="icoShare" title="Descarga tu QR" style="background: #c00301;"
+                                    onclick="showQRBigger('gnpseguros');">
+                                    <i class="bi bi-qr-code-scan icoDockDown" style="color: #fff;"></i>
+                                    <span>Código QR</span>
+                                </div>
+
+                                <div class="icoShare" title="Comparte por WhatsApp" style="background: #000;"
+                                    onclick="getlink('gnpseguros');">
+                                    <i class="bi bi-link-45deg icoDockDown" style="color: #fff;"></i>
+                                    <span>Copiar Link</span>
+                                </div>
+                            </div>
+
+                            <p>&emsp;</p>
+                            <p>&emsp;</p>
+
+                            <div class="contadorVisitas">
+                                <div class="wrapParrafos">
+                                    Esta Tarjeta Inteligente ha recibido&nbsp;
+                                    <visitas>5936</visitas>&nbsp;
+                                    visitas
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--*****ENVIAR POR WHATSAPP A UN N�MERO NO GUARDADO EN LA AGENDA*****-->
+                        <div id="agregarNumeroWA" style="display: none;">
+                            <div class="wrapParrafos" style="margin-top: 25px;">
+                                <div class="icoShare" title="Comparte por WhatsApp a un número no registrado"
+                                    style="background: #a72a29;" onclick="cerrarAddWhats()">
+                                    <i class="bi bi-x icoDockDown" style="color: #fff;"></i>
+                                </div>
+                            </div>
+
+                            <div class="spaceForAddWA">
+                                <form method="post" target="_blank" action="?ctrl=e&amp;action=sendCardByWhatsApp">
+                                    <input type="hidden" name="idEcard" value="215">
+                                    <input type="hidden" name="idEjecutivo" value="215">
+                                    <input type="hidden" name="rutaTarjeta" value="gnpseguros">
+                                    <input type="number" class="form-control" title="claveWA" id="claveWA"
+                                        name="claveWA" placeholder="52 (MEXICO)" value="52"
+                                        style="float: left; width: 20%; margin-left: 5%; margin-top: 20%;"
+                                        required="required" autocomplete="off">
+                                    <input type="number" class="form-control" title="numeroWA" id="numeroWA"
+                                        name="numeroWA" placeholder="OMITE LA CLAVE DEL PAIS (Ej. 5526677050)"
+                                        style="float: left; width: 70%; margin-left: 5%; margin-top: 20%"
+                                        required="required" autocomplete="off">
+                                    <button type="submit" class="btn btn-success" style="margin-top: 10%;">
+                                        <img class="icono" src="assets/images/iconos/wa.png">&emsp;Enviar por WhatsApp
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!--*****ENVIAR POR CORREO ELECTR�NICO*****-->
+                        <div id="agregarCorreos" style="display: none;">
+                            <div class="wrapParrafos" style="margin-top: 25px;">
+                                <div class="icoShare" title="Comparte por WhatsApp a un número no registrado"
+                                    style="background: #a72a29;" onclick="cerrarAddWhats()">
+                                    <i class="bi bi-x icoDockDown" style="color: #fff;"></i>
+                                </div>
+                            </div>
+
+                            <form method="post" action="?ctrl=e&amp;action=sendCardByEmail">
+                                <input type="hidden" name="idEcard" value="215">
+                                <input type="hidden" name="idEjecutivo" value="215">
+                                <input type="hidden" name="rutaTarjeta" value="gnpseguros">
+
+                                <input type="email" class="form-control" title="email" id="email" name="email"
+                                    placeholder="ejemplo@e-cards.com.mx"
+                                    style="width: 80%; margin-left: 10%; margin-top: 30%;" required="required"
+                                    autocomplete="off">
+                                <button type="submit" class="btn btn-primary" style="margin-top: 10%;">
+                                    <label class="glyphicon glyphicon-envelope"
+                                        style="font-size: 15px; color: #fff;"></label>&emsp;Enviar e-card por e-mail
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--*****FOOTER COMPARTIR*****-->
+                    <div class="footerCard_v2"></div> <img class="logoCita" src="u/gnpseguros/logo.png">
+                </div>
+            </div>
+
+            <link type="text/css" rel="stylesheet" href="assets/css/funciones/contacto.css">
+
+            <script>
+                function muestraPopContacto() {
+                    setTimeout('showPop();', 60000);
+                }
+            </script>
+
+            <script>muestraPopContacto();</script>
+
+            <style>
+                * {
+                    font-family: 'Ubuntu', sans-serif !important;
+                }
+
+                .headerVentana {
+                    background:  !important;
+                    border-bottom: 4px solid;
+                }
+
+                .fotoVentana {
+                    border: 2px solid;
+                }
+
+                .closeVentana {
+                    color:  !important;
+                }
+
+                .iconNW {
+                    color:  !important;
+                }
+
+                /*.inputEcard{
+        border-bottom: 2px solid !important;
+    }
+    
+    .inputEcard:focus{
+        border-bottom: 2px solid !important;
+        transition: all 0.5s;
+        
+    }*/
+
+                .btnEcard {
+                    background:  !important;
+                    color: #fff;
+                }
+
+                .fotoPopContacto {
+                    border: 3px solid #00337f;
+                }
+
+                .popContacto {
+                    box-shadow: 0 0 15px #fb6c06 !important;
+                }
+
+                input::-webkit-input-placeholder {
+                    color: #aaa !important;
+                    font-weight: normal !important;
+                    text-align: left;
+                }
+
+                input::-moz-placeholder {
+                    color: #aaa !important;
+                    font-weight: normal !important;
+                    text-align: left;
+                }
+
+                /* firefox 19+ */
+                input:-ms-input-placeholder {
+                    color: #aaa !important;
+                    font-weight: normal !important;
+                    text-align: left;
+                }
+
+                /* ie */
+                input:-moz-placeholder {
+                    color: #aaa !important;
+                    font-weight: normal !important;
+                    text-align: left;
+                }
+
+                .saludoPopContacto {
+                    margin-top: 0 !important;
+                }
+
+                @media (min-width: 801px) {
+                    .saludoPopContacto {
+                        margin-top: 25px !important;
+                    }
+                }
+
+                /*.bgPopContacto{
+        background-color: rgba(255,255,255,0.1);
+        backdrop-filter: blur(50px);
+    }*/
+            </style>
+
+            <div class="ventanaH" id="tarjetacontacto" style="z-index:101;">
+                <div class="headerVentana">
+                    <label class="close cerrarVentana" for="contactoCard" aria-label="Close">
+                        <label aria-hidden="true" for="contactoCard" class="closeVentana">×</label>
+                    </label>
+
+                    <div id="infoVentanaH">
+                        <div class="spinner-border text-danger spinnerLoading" role="status">
+                            <span class="sr-only"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bgPopContacto" id="bgPopContacto"
+                style="opacity: 1; transition: all 0.5s ease 0s; transform: translateY(0%);">
+                <div class="popContacto" id="popContacto"
+                    style="padding: 2.5%;box-shadow: 0 0 20px 1px rgba(255,255,255,0.6);">
+                    <label class="close" onclick="cerrarPopContacto();">
+                        <label aria-hidden="true" class="cerrarContacto">×</label>
+                    </label>
+
+                    <img src="assets/usuarios/fotos/5506371f.jpg" class="fotoPopContacto">
+
+                    <label class="saludoPopContacto">Hola, déjame tus datos y en breve me comunico</label>
+
+                    <form method="post" action="#" style="width: 90%; margin-left: 5%;"
+                        onsubmit="contactamePop();return false;">
+                        <input type="hidden" name="idEcard" id="idEcardP" value="215">
+                        <input type="hidden" name="idEjecutivo" id="idEjecutivoP" value="215">
+
+                        <input type="text" name="nomContacto" id="nomContactoP"
+                            class="form-control inputEcard inputEcardPop" required="required"
+                            placeholder="NOMBRE COMPLETO*" style="margin-top: -5px">
+                        <input type="number" name="tel" id="telP" class="form-control inputEcard inputEcardPop"
+                            required="required" placeholder="TELÉFONO*" maxlength="10">
+                        <input type="email" name="email" id="emailP" class="form-control inputEcard inputEcardPop"
+                            required="required" placeholder="E-MAIL*">
+                        <input type="text" name="mensaje" id="mensajeP" class="form-control inputEcard inputEcardPop"
+                            placeholder="MENSAJE (Opcional)">
+
+                        <center>
+                            <button type="submit" id="btnContactame" class="btn btn-default botonTarpi2_0"
+                                style="margin-top: 10px; margin-bottom: 10px;">
+                                <i class="bi bi-pencil-square" style="font-size: 13px!important;"></i>&nbsp;
+                                Enviar mis datos </button>
+                        </center>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <style>
+                .bgPopNewFollower {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 99999;
+                    background: rgba(0, 0, 0, 0.8);
+                    transform: translatey(-100%);
+                    opacity: 0;
+                }
+
+                .popFollower {
+                    position: relative;
+                    width: 280px;
+                    height: 160px;
+                    background: #fff;
+                    background-image: url('https://www.e-cards.com.mx/assets/images/bg_contacto.jpg');
+                    background-size: cover;
+                    border-radius: 10px;
+                    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.6);
+                    text-align: center;
+                }
+
+                .cerrarContacto {
+                    font-size: 30px !important;
+                    color: #000 !important;
+                    margin-right: 5px;
+                    cursor: pointer;
+                    margin-top: 0;
+                }
+
+                .saludoPopFollow {
+                    margin-top: 5px !important;
+                    text-align: center;
+                    font-size: 12px;
+                    font-weight: bold !important;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                @media (min-width: 801px) {
+                    .saludoPopFollow {
+                        margin-top: 35px !important;
+                    }
+
+                    .popFollower {
+                        height: 170px;
+                    }
+                }
+
+                /*.bgPopNewFollower{
+        background-color: rgba(255,255,255,0.1);
+        backdrop-filter: blur(50px);
+    }*/
+            </style>
+
+
+            <div class="bgPopNewFollower" id="bgNewFollower">
+                <div class="popFollower">
+                    <label class="close" onclick="cerrarPopFollowers();">
+                        <label aria-hidden="true" class="cerrarContacto" style="margin-top: -10px!important;">×</label>
+                    </label>
+
+                    <img src="assets/usuarios/fotos/5506371f.jpg" class="fotoPopContacto">
+
+                    <label class="saludoPopFollow">Ingresa tu correo electrónico para comenzar a seguirme</label>
+
+                    <form method="post" action="#" style="width: 90%; margin-left: 5%;"
+                        onsubmit="siguemePop();return false;">
+                        <input type="hidden" name="idEcard" id="idEcardF" value="215">
+                        <input type="hidden" name="idEjecutivo" id="idEjecutivoF" value="215">
+                        <input type="hidden" name="noFollowers" id="noFollowers" value="23">
+
+                        <input type="email" name="email" id="emailF" class="form-control inputEcard inputEcardPop"
+                            required="required" placeholder="E-MAIL*">
+
+                        <center>
+                            <button type="submit" id="btnContactame" class="btn btn-default botonTarpi2_0"
+                                style="margin-top: 10px; margin-bottom: 10px;">
+                                <i class="bi bi-heart-fill" style="font-size: 13px;"></i>&nbsp;
+                                Hazte fan
+                            </button>
+                        </center>
+                    </form>
+                </div>
+            </div>
+
+            <link type="text/css" rel="stylesheet" href="assets/css/animated/animate.css">
+
+
+            <style>
+                #animacion,
+                #cortina1,
+                #cortina2 {
+                    position: absolute;
+                    z-index: 30;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100vh;
+                    background: #fff;
+                    background-size: cover;
+
+                }
+
+                #animacion {
+                    transform: translatey(-200%);
+                }
+
+                .logoInicio {
+                    margin-top: -50px;
+                    width: 80%;
+                    height: auto;
+                    object-fit: contain;
+                }
+
+
+
+                .botonStart {
+                    width: 80px;
+                    cursor: pointer;
+                }
+
+                #cortina1,
+                #cortina2 {
+                    width: 50%;
+                    z-index: 35;
+                    background-size: cover !important;
+                }
+
+                #cortina1 {
+                    width: 52%;
+                    left: -150%;
+                }
+
+                #cortina2 {
+                    left: auto;
+                    right: -150%;
+                }
+
+                @keyframes cortina1 {
+                    from {
+                        left: 0;
+                    }
+
+                    to {
+                        left: -150%;
+                    }
+                }
+
+                @keyframes cortina2 {
+                    from {
+                        right: 0;
+                    }
+
+                    to {
+                        right: -150%;
+                    }
+                }
+
+                @keyframes animav2 {
+                    0% {
+                        transform: translatey(0%);
+                    }
+
+                    66.66% {
+                        transform: translatey(0%);
+                        opacity: 1
+                    }
+
+                    100% {
+                        transform: translatey(-100%);
+                        opacity: 0
+                    }
+
+                    /*https://developer.mozilla.org/es/docs/Web/CSS/transform-function/rotate3d*/
+                }
+
+                @keyframes fotoPerfil1v2 {
+                    from {
+                        opacity: 0;
+                        transform: rotate(45deg);
+                        box-shadow: 0 0 15px none;
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: rotate(0deg);
+                        box-shadow: 0 0 15px #000;
+                    }
+                }
+
+                @keyframes logoTarpiv2 {
+
+                    /*from{margin-top:-150px}
+        to{margin-top:0;}*/
+                    from {
+                        opacity: 0.1;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+                }
+
+                @keyframes menuDock {
+                    from {
+                        bottom: -100px;
+                    }
+
+                    to {
+                        bottom: 0;
+                    }
+                }
+
+                @keyframes gradiente {
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+                }
+
+                @keyframes opSecundarias {
+                    from {
+                        right: -100px;
+                    }
+
+                    to {
+                        right: 0;
+                    }
+                }
+            </style>
+
+            <div id="animacion"
+                style="display: flex;justify-content: center;align-items: center;background-image: url('https://e-cards.com.mx/u/gnpseguros/bgA917fd950.jpg')!important;background-size: cover!important; padding: 0;">
+                <div class="wrapParrafos">
+                    <div class="wrapParrafos">
+                        <img class="logoInicio animated flip delay-1s" src="u/gnpseguros/logo_anima.png"
+                            style="z-index: 35;">
+                    </div>
+
+                    <div class="wrapParrafos">
+                        <h4 id="slogan" class="animated zoomIn delay-2s"
+                            style="color: #00337f; margin-top: 25px; text-align: center; padding-left: 10px!important; padding-right: 10px!important;">
+                        </h4>
+                    </div>
+                </div>
+
+                <!--img src="assets/images/templetes/_tarpi/start.png" class="botonStart" style=""/-->
+            </div>
+
+
+            <div id="cortina1"
+                style="background-image: url('https://e-cards.com.mx/u/gnpseguros/bgA917fd950.jpg')!important;background-size: cover!important;">
+            </div>
+            <div id="cortina2"
+                style="background-image: url('https://e-cards.com.mx/u/gnpseguros/bgA917fd950.jpg')!important;background-size: cover!important;">
+            </div>
+
+
+
+
+
+
+
+
+
+            <!--------TIPO DE LETRA--------->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+            <link href="https://fonts.googleapis.com/css2?family=Yantramanav&amp;display=swap" rel="stylesheet">
+            <link type="text/css" rel="stylesheet" href="assets/css/funciones/dock.css">
+            <link href="https://fonts.googleapis.com/css?family=Lobster&amp;display=swap" rel="stylesheet">
+            <!--SLOGAN-->
+
+            <style>
+                /*.ventanaH:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255,255,255,0.9);
+        height: 180vh;
+    }*/
+            </style>
+
+            <div class="ventanaH ventanaO" id="tarjetaDock" style="z-index:101;">
+                <!--div class="opacidadTarjeta" style="min-height: 150vh;height: auto;"></div-->
+                <div class="headerVentana">
+                    <label class="close cerrarDock" for="dockCard" aria-label="Close" id="cerrarGeneral">
+                        <label aria-hidden="true" for="dockCard" class="closeVentana">×</label>
+                    </label>
+
+                    <a class="close cerrarDock" onclick="infoDock('215', 'general');" id="RegresaDock"
+                        style="display: none;">
+                        <label class="closeVentana">×</label>
+                    </a>
+                    <div id="infoDock" style="">
+
+                        <div class="spinner-border text-danger spinnerLoading" role="status"
+                            style="position: relative;">
+                            <span class="sr-only"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--*****VCARD*****-->
+    <form method="post" action="index.php?ctrl=e&amp;action=downloadContact" id="addContact" name="addContact">
+        <input type="hidden" name="nombre" value="Narda Sánchez">
+        <input type="hidden" name="nombre2" value="Sánchez;Narda;;Lic.">
+        <input type="hidden" name="puesto" value="Agente de Seguros">
+        <input type="hidden" name="telefono" value="5524790088">
+        <input type="hidden" name="celular" value="5526677050">
+        <input type="hidden" name="direccion"
+            value="Dr. J. Jiménez Cantú 510, Centro Urbano, 54720 Cuautitlán Izcalli, Méx.">
+        <input type="hidden" name="email" value="aaron.tesla@e-cards.com.mx">
+        <input type="hidden" name="web" value="https://www.e-cards.com.mx/">
+        <input type="hidden" name="ruta" value="gnpseguros">
+        <input type="hidden" name="foto" value="5506371f.jpg">
+        <input type="hidden" name="org" value="GNP Seguros">
+    </form>
+    <!--*****BIBLIOTECAS DE PART�CULAS*****-->
+    <script type="text/javascript" src="assets/js/particles.js"></script>
+    <script>
+        particlesJS('particles-js',
+            {
+                "particles": {
+                    "number": {
+                        "value": 125,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#000000"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 5,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#000000",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 6,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true,
+                "config_demo": {
+                    "hide_card": false,
+                    "background_color": "#b61924",
+                    "background_image": "",
+                    "background_position": "50% 50%",
+                    "background_repeat": "no-repeat",
+                    "background_size": "cover"
+                }
+            }
+        );
+    </script>
+
+    <iframe id="tidio-chat-code" title="Tidio Chat code" style="display: none;"></iframe>
+    <div id="tidio-chat"><iframe title="Tidio Chat" id="tidio-chat-iframe"
+            style="display: block; border: none; position: fixed; top: auto; bottom: 50% !important; right: 0px; width: 60px; height: 350px; transform: translateY(50%) !important; opacity: 1; background: none transparent !important; margin: 0px; max-height: 100vh; max-width: 100vw; transition: none 0s ease 0s !important; visibility: visible; z-index: 999999999 !important;"></iframe>
+    </div>
+</body>
+
+</html>
