@@ -3,7 +3,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
 //import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js";
 
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, sendPasswordResetEmail  } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, sendPasswordResetEmail, sendEmailVerification   } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -79,8 +79,13 @@ export const cerrarSesion2 = () =>
    *@param {string} password the description of the Task
 */
 
-export const crearCuenta = (auth, email, password, nombre) =>
-  createUserWithEmailAndPassword(auth, email, password, nombre)
+
+
+
+
+
+export const crearCuenta = (auth, email, password, nombre, cedula, phone) =>
+  createUserWithEmailAndPassword(auth, email, password, nombre, cedula, phone)
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
@@ -89,6 +94,8 @@ export const crearCuenta = (auth, email, password, nombre) =>
       console.log(userCredential.user.uid);
       localStorage.setItem("UserID", userCredential.user.uid);
       localStorage.setItem("IDname", nombre);
+      localStorage.setItem("IDcedula", cedula);
+      localStorage.setItem("IDphone", phone);
       window.location.href = 'home.html';
       // console.log(IDname);
 
@@ -111,6 +118,8 @@ export const iniciarSesion = (auth, email, password) =>
       const user = userCredential.user;
       localStorage.setItem("UserID", userCredential.user.uid);
       localStorage.removeItem('IDname');
+      localStorage.removeItem('IDcedula');
+      localStorage.removeItem('IDphone');
       window.location.href = 'home.html';
       // ...
     })
@@ -154,7 +163,11 @@ onAuthStateChanged(auth, async (user) => {
     const uid = user.uid;
 
     var nombreID = localStorage.getItem("IDname");
+    var cedulaID = localStorage.getItem("IDcedula");
+    var phoneID = localStorage.getItem("IDphone");
 
+    var email_verified = user.email_verified;
+    console.log(email_verified);
     const contenedorQR = document.getElementById('contenedorQR');
     const formulario = document.getElementById('formulario');
     const QR = new QRCode(contenedorQR);
@@ -171,6 +184,8 @@ onAuthStateChanged(auth, async (user) => {
     } else {
       setDoc(doc(db, "users", uid), {
         name: nombreID,
+        cedula: cedulaID,
+        phone: phoneID,
 
       });
     }

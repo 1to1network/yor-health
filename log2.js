@@ -25,18 +25,20 @@ import {
   formCrearCuenta.addEventListener("submit", async (e) => {
     e.preventDefault();
     const nombre = formCrearCuenta["name2"];
+    const cedula = formCrearCuenta["cedula2"];
+    const phone = formCrearCuenta["phone2"];
     const correo = formCrearCuenta["email2"];
     const contrasena = formCrearCuenta["password2"];
     
    
    
    try {
-      //  console.log(correo.value)
-        //console.log(contrasena.value)
-       
+  //  console.log(nombre.value)
+   
+  
         
       //return nombre;
-   await  crearCuenta(auth,correo.value,contrasena.value,nombre.value)
+   await  crearCuenta(auth,correo.value,contrasena.value,nombre.value,cedula.value,phone.value)
   
     //  window.location.href = 'home.html';
        
