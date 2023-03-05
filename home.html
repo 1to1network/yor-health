@@ -99,10 +99,17 @@
 			<article id="pay" class="panel">
 				<header>
 					<h2>Realizar compra</h2>
+
+					<script async src="https://js.stripe.com/v3/buy-button.js">
+					</script>
+
+					<stripe-buy-button buy-button-id="buy_btn_1MiOZVCwBMs8znB6TpUhPOvw"
+						publishable-key="pk_live_51MKRqxCwBMs8znB6YlQi7AEOl5SnGDb5l2shByHyL4fnt13M7XUvyN0bactXM2I9S4d8ja42hnsLLzaIwNmeyicG00yB9ACL0N">
+					</stripe-buy-button>
 				</header>
-				
-			
-				
+
+
+
 
 			</article>
 
@@ -114,13 +121,15 @@
 					<h2>Acceso</h2>
 				</header>
 				<div class="contenedor" id="figuras" style="text-align: center; background-color: white;">
-					<h4><span id="nombre2"></span> bienvenid@ a <span style="color: #228a6f;" >Yor Health 2023</span></h4>
+					<h4><span id="nombre2"></span> bienvenid@ a <span style="color: #228a6f;">Yor Health 2023</span>
+					</h4>
 
 
 					<div id="contenedorQR" class="contenedorQR"></div>
 				</div>
 				<br>
-				<input style="background-color: #228a6f; color: white;" type="button" class="btn tw" id="btnSave2" value="Descargar Acceso">
+				<input style="background-color: #228a6f; color: white;" type="button" class="btn tw" id="btnSave2"
+					value="Descargar Acceso">
 
 
 			</article>
@@ -206,7 +215,7 @@
 		});
 
 	</script>
-    <script src="https://norfipc.com/js/canvas2image.min.js"></script>
+	<script src="https://norfipc.com/js/canvas2image.min.js"></script>
 	<script src="assetshome/js/jquery.min.js"></script>
 	<script src="assetshome/js/browser.min.js"></script>
 	<script src="assetshome/js/breakpoints.min.js"></script>
